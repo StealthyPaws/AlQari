@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- internet permission added so Retrofit can call your server -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <!-- The permission above is required by API levels 28 and higher according to docs -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!--remove   android:usesCleartextTraffic="true" when deploying, this is to be used
+    during development only -->
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AlQari"
+        >
+        <service
+            android:name="com.example.al_qari.AudioStreamerService"
+            android:foregroundServiceType="microphone"
+            android:exported="false">
+        </service>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Quran_Basics" />
+        <activity android:name=".Memorization" />
+        <activity android:name=".Salah" />
+        <activity android:name=".SalahMemorize" />
+        <activity android:name=".SalahLog" />
+        <activity android:name=".Personalization" />
+        <activity android:name=".QuranModuleActivity" />
+        <activity android:name=".AlJawfActivity_lp" />
+        <activity android:name=".AlHalqActivity_lp" />
+        <activity android:name=".AlLisaanActivity_lp" />
+        <activity android:name=".AshShafatanActivity_lp" />
+        <activity android:name=".AlKhayshumActivity_lp" />
+        <activity android:name=".QuranLessonActivity" />
+        <activity android:name=".QuranPracticeActivity" />
+        <activity android:name=".Memorization_module_activity" />
+        <activity android:name=".Memorization_H" />
+        <activity android:name=".Memorization_T" />
+        <activity android:name=".SplashActivity" />
+
+
+
+    </application>
+
+</manifest>

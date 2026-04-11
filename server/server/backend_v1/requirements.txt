@@ -1,0 +1,21 @@
+# Core Web Framework
+flask==3.0.3
+
+# Audio & Signal Processing
+sounddevice==0.4.6
+soundfile==0.12.1
+scipy==1.13.1
+numpy==1.26.4
+torchaudio==2.3.1
+
+# Deep Learning & Transformers
+torch==2.3.1
+transformers==4.42.3
+
+# Google Gemini API
+google-generativeai==0.8.5
+
+# Utilities
+requests==2.32.3
+tqdm==4.66.4
+typing_extensions>=4.9.0

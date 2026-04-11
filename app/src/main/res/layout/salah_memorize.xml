@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/include_bottomBar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- 🔹 Top Bar -->
+            <include
+                android:id="@+id/include_topBar"
+                layout="@layout/layout_top_bar" />
+
+            <!-- 🔹 Disclaimer -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Disclaimer: We are not teaching your order of prayer — only the text recited in prayer."
+                    android:textColor="#55E91509"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:background="@drawable/bg_spinner_popup" />
+            </com.google.android.material.card.MaterialCardView>
+
+        <!-- 🔹 STEP TEMPLATE (REPEAT for each step) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_duo_card"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+            <!-- 🔹 Step 1 -->
+            <TextView
+                android:text="Step 1 – Starting the Prayer (Takbir Tahrimah)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerStepTitle" />
+            <TextView
+                android:text="اللهُ أَكْبَر"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                style="@style/PrayerArabicText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_duo_card"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <!-- 🔹 Step 2 -->
+            <TextView
+                android:text="Step 2 – Dua Al-Istiftah (Opening Supplication)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                style="@style/PrayerStepTitle" />
+            <TextView
+                android:text="سُبْحَانَكَ اللّهُمَّ وَبِحَمْدِكَ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerArabicText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_duo_card"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <!-- 🔹 Step 3 -->
+            <TextView
+                android:text="Step 3 – Ta‘awwuz (Seeking Refuge)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerStepTitle" />
+            <TextView
+                android:text="أَعُوذُ بِاللّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerArabicText" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_duo_card"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+
+
+        <!-- 🔹 Step 4 -->
+            <TextView
+                android:text="Step 4 – Tasmiyah (Before Every Surah)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerStepTitle" />
+            <TextView
+                android:text="بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيمِ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerArabicText" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_duo_card"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <!-- 🔹 Step 5 -->
+            <TextView
+                android:text="Step 5 – Surah Al-Fatiha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerStepTitle" />
+            <TextView
+                android:text="الْـحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِينَ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerArabicText" />
+
+        </LinearLayout>
+
+            <!-- 🔹 Step 6 (Dropdown Short Surah) -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_duo_card"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+            <TextView
+                android:text="Step 6 – Short Surah (Example: Surah Al-Ikhlas)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerStepTitle" />
+            <Spinner
+                android:id="@+id/spinnerSurahs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_duo_card"
+                android:popupBackground="@drawable/bg_spinner_popup"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+
+            <!-- 🔹 Step 7 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_duo_card"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:text="Step 7 – Rukū‘ (Bowing)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerStepTitle" />
+            <TextView
+                android:text="سُبْحَانَ رَبِّيَ الْعَظِيمِ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerArabicText" />
+
+        </LinearLayout>
+
+            <!-- 🔹 Step 8 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_duo_card"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+            <TextView
+                android:text="Step 8 – Qawmah (Standing after Rukū‘)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerStepTitle" />
+            <TextView
+                android:text="سَمِعَ اللّٰهُ لِمَنْ حَمِدَهُ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerArabicText" />
+
+        </LinearLayout>
+
+            <!-- 🔹 Step 9 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_duo_card"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:text="Step 9 – Sajdah (Prostration)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerStepTitle" />
+            <TextView
+                android:text="سُبْحَانَ رَبِّيَ الأَعْلَى"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerArabicText" />
+
+        </LinearLayout>
+
+            <!-- 🔹 Step 10 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_duo_card"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:text="Step 10 – Tashahhud (Sitting after Two Rak‘ah)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerStepTitle" />
+            <TextView
+                android:text="اَلتَّحِيَّاتُ لِلّٰهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerArabicText" />
+
+        </LinearLayout>
+
+            <!-- 🔹 Step 11 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_duo_card"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:text="Step 11 – Salat Alan-Nabi (Darood)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerStepTitle" />
+            <TextView
+                android:text="اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَعَلٰى آلِ مُحَمَّدٍ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerArabicText" />
+
+        </LinearLayout>
+            <!-- 🔹 Step 12 (Dropdown Supplication) -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_duo_card"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+            <TextView
+                android:text="Step 12 – Supplication before Ending Salah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerStepTitle" />
+            <Spinner
+                android:id="@+id/spinnerSupplication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_duo_card"
+                android:popupBackground="@drawable/bg_spinner_popup"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+
+            <!-- 🔹 Step 13 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_duo_card"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+            <TextView
+                android:text="Step 13 – Finishing the Prayer (Salam)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerStepTitle" />
+            <TextView
+                android:text="السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللّٰهِ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PrayerArabicText" />
+
+        </LinearLayout>
+
+            <!-- 🔹 Start Button -->
+            <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStart"
+            android:layout_width="220dp"
+            android:layout_height="56dp"
+            android:text="Start"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/bg_duo_button_green"
+            app:backgroundTint="@null"
+            app:cornerRadius="16dp"
+            android:layout_marginBottom="40dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/include_bottomBar"
+        layout="@layout/layout_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

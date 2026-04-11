@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/include_bottomBar"
+        android:background="@drawable/gradient_background"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="80dp">
+
+            <!-- 🟣 Top Bar Include -->
+            <include
+                android:id="@+id/include_topBar"
+                layout="@layout/layout_top_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- 🟣 CARD 1: General Overview -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="18dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="@drawable/bg_duo_card">
+
+                    <TextView
+                        android:text="General Overview"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/cardOverviewText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#EDEBFF"
+                        android:textSize="15sp"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- 🟣 CARD 2: The bottom lip touching the upper incisors -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="18dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="@drawable/bg_duo_card">
+
+                    <TextView
+                        android:text="The bottom lip touching the upper incisors"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/cardbottomText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#EDEBFF"
+                        android:textSize="15sp"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ف -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFa"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:text="ف"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/amiri"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:background="@drawable/bg_duo_button_blue"
+                app:backgroundTint="@null"
+                app:cornerRadius="16dp" />
+
+            <!-- 🟣 CARD 3: The meeting of the two lips -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_meeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="18dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="@drawable/bg_duo_card">
+
+                    <TextView
+                        android:text="The meeting of the two lips"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/cardMeetingText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#EDEBFF"
+                        android:textSize="15sp"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ب -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBa"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:text="ب"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/amiri"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:background="@drawable/bg_duo_button_pink"
+                app:backgroundTint="@null"
+                app:cornerRadius="16dp" />
+
+            <!-- م -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMeem"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:text="م"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/amiri"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:background="@drawable/bg_duo_button_green"
+                app:backgroundTint="@null"
+                app:cornerRadius="16dp" />
+
+            <!-- و -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnWaw"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:text="و"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/amiri"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:background="@drawable/bg_duo_button_blue"
+                app:backgroundTint="@null"
+                app:cornerRadius="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+    <include
+        android:id="@+id/include_bottomBar"
+        layout="@layout/layout_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

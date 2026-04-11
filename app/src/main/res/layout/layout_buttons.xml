@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <!-- Floating Dark Glass Bottom Bar -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_margin="12dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="12dp"
+        android:background="@drawable/bg_duo_bottom_nav"
+        android:elevation="18dp"
+        android:translationZ="6dp"
+        android:weightSum="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Profile -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnProfile"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:background="@android:color/transparent"
+            android:stateListAnimator="@null"
+            android:elevation="0dp"
+            app:icon="@drawable/profile"
+            app:iconSize="26dp"
+            app:iconTint="#FFFFFF" />
+
+        <!-- Memorize -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMemorize"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:background="@android:color/transparent"
+            app:icon="@drawable/memorize"
+            app:iconSize="24dp"
+            app:iconTint="@null" />
+
+        <!-- Salah -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSalah"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:background="@android:color/transparent"
+            app:icon="@drawable/salah"
+            app:iconSize="24dp"
+            app:iconTint="@null" />
+
+
+        <!-- Quran Basics -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnQuranBasics"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:background="@android:color/transparent"
+            app:icon="@drawable/basics"
+            app:iconSize="24dp"
+            app:iconTint="@null" />
+
+
+        <!-- Settings -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSettings"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:background="@android:color/transparent"
+            android:stateListAnimator="@null"
+            android:elevation="0dp"
+            app:icon="@drawable/settings"
+            app:iconSize="26dp"
+            app:iconTint="#FFFFFF" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

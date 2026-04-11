@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Al-Qari</string>
+
+<!--        delete these later-->
+        <string name="greeting_text">Salam, moon_r!</string>
+        <string name="current_streak">Current Streak</string>
+        <string name="longest_streak">Longest Streak</string>
+        <string name="progress">Progress</string>
+        <string name="reading">Reading</string>
+        <string name="memorization_progress">Memorization: 3.25%</string>
+        <string name="engagement_progress">Engagement: 1 hr 12 min</string>
+        <string name="verses_recited">Verses Recited: 128</string>
+        <string name="current_surah">Al-Baqarah 1–5</string>
+        <string name="verses_count">5 Verses</string>
+        <string name="current_streak_icon">Current streak star icon</string>
+        <string name="longest_streak_icon">Longest streak star icon</string>
+        <string name="progress_icon">Progress section icon</string>
+        <string name="reading_icon">Reading section icon</string>
+
+</resources>

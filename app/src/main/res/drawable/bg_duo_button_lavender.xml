@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow/Lip (Darker Lavender) -->
+    <item android:top="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#A060A0"/> <!-- Darker shade of #CC82C8 -->
+            <corners android:radius="16dp"/>
+        </shape>
+    </item>
+
+    <!-- Main Button Face (Lavender) -->
+    <item android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#CC82C8"/>
+            <corners android:radius="16dp"/>
+        </shape>
+    </item>
+</layer-list>

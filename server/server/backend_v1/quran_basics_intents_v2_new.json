@@ -1,0 +1,966 @@
+[
+  {
+    "intent": "open_module_al_jauf",
+    "description": "Handles when user wants to open module for Al Jauf module.",
+    "examples": [
+      "Begin Al Jauf fundamentals",
+      "Start Al Jauf lesson",
+      "Teach me about Al Jauf",
+      "Take me to Al Jauf",
+      "Show me Jawf lessons",
+      "Launch Cavity of the mouth learning",
+      "Go to Al Jauf module",
+      "Access Al Jauf section",
+      "Access Jawf section",
+      "Launch Al Jauf learning",
+      "Take me to Cavity of the mouth",
+      "I want to learn Jawf",
+      "Open Jawf",
+      "Go to Jawf module",
+      "Launch Jawf learning",
+      "Take me to Jawf",
+      "Show me Al Jauf lessons",
+      "Teach me about Cavity of the mouth",
+      "Start Jawf lesson",
+      "Teach me about Jawf",
+      "Access Cavity of the mouth section",
+      "I want to learn Al Jauf",
+      "Open Al Jauf",
+      "Begin Jawf fundamentals",
+      "I want to learn Cavity of the mouth",
+      "Start Cavity of the mouth lesson",
+      "Show me Cavity of the mouth lessons",
+      "Go to Cavity of the mouth module",
+      "Begin Cavity of the mouth fundamentals",
+      "Open Cavity of the mouth"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "test_module_al_jauf",
+    "description": "Handles when user wants to test module for Al Jauf module.",
+    "examples": [
+      "Give me Jawf test",
+      "Begin Cavity of the mouth assessment",
+      "Give me Al Jauf test",
+      "I want to attempt Cavity of the mouth quiz",
+      "Launch Jawf test",
+      "Launch Cavity of the mouth test",
+      "Begin Al Jauf assessment",
+      "Take Jawf quiz",
+      "Begin quiz for Al Jauf",
+      "Check my knowledge of Jawf",
+      "Begin quiz for Cavity of the mouth",
+      "I want to attempt Al Jauf quiz",
+      "Start Al Jauf test",
+      "Test me on Jawf",
+      "Begin Jawf assessment",
+      "Begin quiz for Jawf",
+      "Start Jawf test",
+      "Take Cavity of the mouth quiz",
+      "Test me on Al Jauf",
+      "Test me on Cavity of the mouth",
+      "Give me Cavity of the mouth test",
+      "I want to attempt Jawf quiz",
+      "Check my knowledge of Cavity of the mouth",
+      "Check my knowledge of Al Jauf",
+      "Start Cavity of the mouth test",
+      "Launch Al Jauf test",
+      "Take Al Jauf quiz"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "practice_module_al_jauf",
+    "description": "Handles when user wants to practice module for Al Jauf module.",
+    "examples": [
+      "Take me to practice for Al Jauf",
+      "Help me practice Jawf",
+      "I want to practice Al Jauf",
+      "I want to practice Cavity of the mouth",
+      "Begin Jawf training",
+      "Open Cavity of the mouth practice session",
+      "Let's practice Jawf",
+      "I want to practice Jawf",
+      "Open Al Jauf practice session",
+      "Take me to practice for Jawf",
+      "Let's practice Cavity of the mouth",
+      "Begin Al Jauf training",
+      "Begin Cavity of the mouth training",
+      "Help me practice Al Jauf",
+      "Help me practice Cavity of the mouth",
+      "Open Jawf practice session",
+      "Start practicing Cavity of the mouth",
+      "Practice Jawf",
+      "Take me to practice for Cavity of the mouth",
+      "Practice Al Jauf",
+      "Practice Cavity of the mouth",
+      "Start practicing Jawf",
+      "Let's practice Al Jauf",
+      "Start practicing Al Jauf"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "read_description_module_al_jauf",
+    "description": "Handles when user wants to read description module for Al Jauf module.",
+    "examples": [
+      "Tell me about Al Jauf",
+      "Tell me about Jawf",
+      "Give me details about Al Jauf",
+      "Tell me about Cavity of the mouth",
+      "Describe Al Jauf",
+      "Explain what Jawf is",
+      "I want to know about Jawf",
+      "I want to know about Cavity of the mouth",
+      "Read description of Al Jauf",
+      "What is Al Jauf?",
+      "Read description of Jawf",
+      "What is Cavity of the mouth?",
+      "Read description of Cavity of the mouth",
+      "Explain what Al Jauf is",
+      "Give me details about Jawf",
+      "I want to know about Al Jauf",
+      "Give me details about Cavity of the mouth",
+      "What is Jawf?",
+      "Describe Jawf",
+      "Describe Cavity of the mouth",
+      "Explain what Cavity of the mouth is"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "open_module_al_halq",
+    "description": "Handles when user wants to open module for Al Halq module.",
+    "examples": [
+      "Open Pharynx",
+      "Begin Pharynx fundamentals",
+      "Take me to Throat",
+      "Open Throat",
+      "Access Pharynx section",
+      "Go to Al Halq module",
+      "Launch Pharynx learning",
+      "Launch Throat learning",
+      "Teach me about Al Halq",
+      "Show me Throat lessons",
+      "Take me to Pharynx",
+      "Take me to Al Halq",
+      "Start Al Halq lesson",
+      "I want to learn Pharynx",
+      "Go to Pharynx module",
+      "I want to learn Throat",
+      "Begin Al Halq fundamentals",
+      "Start Pharynx lesson",
+      "Show me Al Halq lessons",
+      "Teach me about Throat",
+      "Access Throat section",
+      "Begin Throat fundamentals",
+      "I want to learn Al Halq",
+      "Start Throat lesson",
+      "Go to Throat module",
+      "Access Al Halq section",
+      "Show me Pharynx lessons",
+      "Open Al Halq",
+      "Teach me about Pharynx",
+      "Launch Al Halq learning"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "test_module_al_halq",
+    "description": "Handles when user wants to test module for Al Halq module.",
+    "examples": [
+      "I want to attempt Pharynx quiz",
+      "Start Throat test",
+      "Give me Throat test",
+      "Take Throat quiz",
+      "Check my knowledge of Pharynx",
+      "Test me on Throat",
+      "I want to attempt Al Halq quiz",
+      "Launch Throat test",
+      "Give me Pharynx test",
+      "Test me on Al Halq",
+      "Begin Throat assessment",
+      "Check my knowledge of Al Halq",
+      "Begin quiz for Al Halq",
+      "Launch Pharynx test",
+      "I want to attempt Throat quiz",
+      "Check my knowledge of Throat",
+      "Test me on Pharynx",
+      "Launch Al Halq test",
+      "Start Pharynx test",
+      "Take Al Halq quiz",
+      "Begin quiz for Throat",
+      "Begin Pharynx assessment",
+      "Give me Al Halq test",
+      "Take Pharynx quiz",
+      "Begin Al Halq assessment",
+      "Start Al Halq test",
+      "Begin quiz for Pharynx"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "practice_module_al_halq",
+    "description": "Handles when user wants to practice module for Al Halq module.",
+    "examples": [
+      "Help me practice Al Halq",
+      "Help me practice Pharynx",
+      "Let's practice Al Halq",
+      "I want to practice Al Halq",
+      "Help me practice Throat",
+      "Open Pharynx practice session",
+      "Let's practice Throat",
+      "Let's practice Pharynx",
+      "Start practicing Pharynx",
+      "Practice Throat",
+      "Begin Pharynx training",
+      "Take me to practice for Pharynx",
+      "Take me to practice for Throat",
+      "Begin Throat training",
+      "Open Al Halq practice session",
+      "Practice Pharynx",
+      "I want to practice Pharynx",
+      "Take me to practice for Al Halq",
+      "I want to practice Throat",
+      "Start practicing Throat",
+      "Open Throat practice session",
+      "Begin Al Halq training",
+      "Practice Al Halq",
+      "Start practicing Al Halq"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "read_description_module_al_halq",
+    "description": "Handles when user wants to read description module for Al Halq module.",
+    "examples": [
+      "What is Pharynx?",
+      "Read description of Throat",
+      "I want to know about Pharynx",
+      "What is Throat?",
+      "Tell me about Al Halq",
+      "Describe Al Halq",
+      "Explain what Pharynx is",
+      "I want to know about Throat",
+      "Read description of Al Halq",
+      "Give me details about Al Halq",
+      "Give me details about Throat",
+      "What is Al Halq?",
+      "Tell me about Throat",
+      "Explain what Throat is",
+      "Read description of Pharynx",
+      "Tell me about Pharynx",
+      "I want to know about Al Halq",
+      "Describe Throat",
+      "Give me details about Pharynx",
+      "Describe Pharynx",
+      "Explain what Al Halq is"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "open_module_al_lisaan",
+    "description": "Handles when user wants to open module for Al Lisaan module.",
+    "examples": [
+      "I want to learn Tongue",
+      "Launch Tongue learning",
+      "Show me Tongue lessons",
+      "Launch Speech organ learning",
+      "Start Speech organ lesson",
+      "Teach me about Speech organ",
+      "Show me Al Lisaan lessons",
+      "Open Speech organ",
+      "Take me to Speech organ",
+      "Take me to Al Lisaan",
+      "Show me Speech organ lessons",
+      "Take me to Tongue",
+      "Go to Speech organ module",
+      "Access Speech organ section",
+      "Begin Al Lisaan fundamentals",
+      "Launch Al Lisaan learning",
+      "I want to learn Al Lisaan",
+      "Open Tongue",
+      "Access Al Lisaan section",
+      "Start Al Lisaan lesson",
+      "Go to Tongue module",
+      "Open Al Lisaan",
+      "Teach me about Al Lisaan",
+      "Begin Tongue fundamentals",
+      "Start Tongue lesson",
+      "Access Tongue section",
+      "Begin Speech organ fundamentals",
+      "I want to learn Speech organ",
+      "Teach me about Tongue",
+      "Go to Al Lisaan module"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "test_module_al_lisaan",
+    "description": "Handles when user wants to test module for Al Lisaan module.",
+    "examples": [
+      "I want to attempt Tongue quiz",
+      "Test me on Al Lisaan",
+      "Begin quiz for Al Lisaan",
+      "Begin quiz for Speech organ",
+      "Check my knowledge of Tongue",
+      "I want to attempt Al Lisaan quiz",
+      "Launch Tongue test",
+      "Launch Al Lisaan test",
+      "Give me Al Lisaan test",
+      "Launch Speech organ test",
+      "Start Al Lisaan test",
+      "Take Tongue quiz",
+      "Give me Tongue test",
+      "Begin Speech organ assessment",
+      "Start Tongue test",
+      "Check my knowledge of Speech organ",
+      "Start Speech organ test",
+      "Begin quiz for Tongue",
+      "Give me Speech organ test",
+      "Begin Tongue assessment",
+      "Begin Al Lisaan assessment",
+      "Check my knowledge of Al Lisaan",
+      "Test me on Tongue",
+      "Take Speech organ quiz",
+      "I want to attempt Speech organ quiz",
+      "Take Al Lisaan quiz",
+      "Test me on Speech organ"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "practice_module_al_lisaan",
+    "description": "Handles when user wants to practice module for Al Lisaan module.",
+    "examples": [
+      "Let's practice Tongue",
+      "Practice Al Lisaan",
+      "Take me to practice for Al Lisaan",
+      "Practice Tongue",
+      "Start practicing Speech organ",
+      "I want to practice Tongue",
+      "Help me practice Al Lisaan",
+      "Open Tongue practice session",
+      "Start practicing Al Lisaan",
+      "Practice Speech organ",
+      "Take me to practice for Tongue",
+      "Help me practice Speech organ",
+      "Start practicing Tongue",
+      "Begin Speech organ training",
+      "Let's practice Al Lisaan",
+      "Help me practice Tongue",
+      "Let's practice Speech organ",
+      "Open Speech organ practice session",
+      "Begin Tongue training",
+      "I want to practice Speech organ",
+      "I want to practice Al Lisaan",
+      "Open Al Lisaan practice session",
+      "Begin Al Lisaan training",
+      "Take me to practice for Speech organ"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "read_description_module_al_lisaan",
+    "description": "Handles when user wants to read description module for Al Lisaan module.",
+    "examples": [
+      "What is Tongue?",
+      "Describe Tongue",
+      "Give me details about Al Lisaan",
+      "Read description of Al Lisaan",
+      "What is Al Lisaan?",
+      "Read description of Tongue",
+      "Explain what Al Lisaan is",
+      "Explain what Tongue is",
+      "Read description of Speech organ",
+      "Give me details about Speech organ",
+      "Tell me about Tongue",
+      "Describe Al Lisaan",
+      "I want to know about Tongue",
+      "Describe Speech organ",
+      "Tell me about Speech organ",
+      "Explain what Speech organ is",
+      "What is Speech organ?",
+      "I want to know about Al Lisaan",
+      "I want to know about Speech organ",
+      "Tell me about Al Lisaan",
+      "Give me details about Tongue"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "open_module_ash_shafataan",
+    "description": "Handles when user wants to open module for Ash Shafataan module.",
+    "examples": [
+      "Show me Labial area lessons",
+      "Start Lips lesson",
+      "Open Ash Shafataan",
+      "Show me Ash Shafataan lessons",
+      "Launch Lips learning",
+      "Take me to Labial area",
+      "Teach me about Ash Shafataan",
+      "I want to learn Lips",
+      "Launch Labial area learning",
+      "Access Labial area section",
+      "Teach me about Lips",
+      "I want to learn Labial area",
+      "Start Ash Shafataan lesson",
+      "Access Lips section",
+      "Teach me about Labial area",
+      "Begin Ash Shafataan fundamentals",
+      "Take me to Ash Shafataan",
+      "Take me to Lips",
+      "Launch Ash Shafataan learning",
+      "Access Ash Shafataan section",
+      "Open Labial area",
+      "Start Labial area lesson",
+      "Open Lips",
+      "I want to learn Ash Shafataan",
+      "Go to Lips module",
+      "Begin Labial area fundamentals",
+      "Go to Labial area module",
+      "Show me Lips lessons",
+      "Begin Lips fundamentals",
+      "Go to Ash Shafataan module"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "test_module_ash_shafataan",
+    "description": "Handles when user wants to test module for Ash Shafataan module.",
+    "examples": [
+      "Take Labial area quiz",
+      "Check my knowledge of Ash Shafataan",
+      "Test me on Lips",
+      "Start Lips test",
+      "Test me on Labial area",
+      "Give me Ash Shafataan test",
+      "Launch Labial area test",
+      "Begin quiz for Lips",
+      "Start Labial area test",
+      "Begin Labial area assessment",
+      "Begin Lips assessment",
+      "Take Lips quiz",
+      "I want to attempt Lips quiz",
+      "Launch Ash Shafataan test",
+      "Give me Lips test",
+      "Give me Labial area test",
+      "Start Ash Shafataan test",
+      "Check my knowledge of Lips",
+      "Begin quiz for Labial area",
+      "Begin Ash Shafataan assessment",
+      "Check my knowledge of Labial area",
+      "I want to attempt Labial area quiz",
+      "I want to attempt Ash Shafataan quiz",
+      "Begin quiz for Ash Shafataan",
+      "Test me on Ash Shafataan",
+      "Launch Lips test",
+      "Take Ash Shafataan quiz"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "practice_module_ash_shafataan",
+    "description": "Handles when user wants to practice module for Ash Shafataan module.",
+    "examples": [
+      "Let's practice Labial area",
+      "I want to practice Ash Shafataan",
+      "Take me to practice for Labial area",
+      "Begin Labial area training",
+      "Practice Ash Shafataan",
+      "Start practicing Labial area",
+      "I want to practice Labial area",
+      "Let's practice Ash Shafataan",
+      "Open Ash Shafataan practice session",
+      "Begin Ash Shafataan training",
+      "Practice Labial area",
+      "Open Lips practice session",
+      "Help me practice Lips",
+      "Help me practice Labial area",
+      "Open Labial area practice session",
+      "Practice Lips",
+      "Help me practice Ash Shafataan",
+      "Let's practice Lips",
+      "Start practicing Lips",
+      "Take me to practice for Ash Shafataan",
+      "I want to practice Lips",
+      "Start practicing Ash Shafataan",
+      "Take me to practice for Lips",
+      "Begin Lips training"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "read_description_module_ash_shafataan",
+    "description": "Handles when user wants to read description module for Ash Shafataan module.",
+    "examples": [
+      "Explain what Labial area is",
+      "Tell me about Ash Shafataan",
+      "What is Ash Shafataan?",
+      "Describe Labial area",
+      "I want to know about Labial area",
+      "Describe Lips",
+      "Read description of Labial area",
+      "I want to know about Ash Shafataan",
+      "I want to know about Lips",
+      "Explain what Lips is",
+      "Tell me about Labial area",
+      "Give me details about Labial area",
+      "Give me details about Lips",
+      "Explain what Ash Shafataan is",
+      "What is Lips?",
+      "What is Labial area?",
+      "Read description of Lips",
+      "Read description of Ash Shafataan",
+      "Tell me about Lips",
+      "Give me details about Ash Shafataan",
+      "Describe Ash Shafataan"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "open_module_al_khaishoom",
+    "description": "Handles when user wants to open module for Al Khaishoom module.",
+    "examples": [
+      "Launch Al Khaishoom learning",
+      "Open Al Khaishoom",
+      "Access Nose section",
+      "Show me Nasal cavity lessons",
+      "Begin Nasal cavity fundamentals",
+      "Access Nasal cavity section",
+      "Take me to Nose",
+      "Take me to Al Khaishoom",
+      "Start Al Khaishoom lesson",
+      "I want to learn Nasal cavity",
+      "I want to learn Al Khaishoom",
+      "Begin Al Khaishoom fundamentals",
+      "Go to Nose module",
+      "Teach me about Nasal cavity",
+      "Access Al Khaishoom section",
+      "Open Nose",
+      "Teach me about Nose",
+      "Go to Nasal cavity module",
+      "Show me Nose lessons",
+      "Start Nasal cavity lesson",
+      "I want to learn Nose",
+      "Start Nose lesson",
+      "Launch Nose learning",
+      "Begin Nose fundamentals",
+      "Go to Al Khaishoom module",
+      "Launch Nasal cavity learning",
+      "Teach me about Al Khaishoom",
+      "Show me Al Khaishoom lessons",
+      "Take me to Nasal cavity",
+      "Open Nasal cavity"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "test_module_al_khaishoom",
+    "description": "Handles when user wants to test module for Al Khaishoom module.",
+    "examples": [
+      "Begin quiz for Al Khaishoom",
+      "Launch Al Khaishoom test",
+      "Test me on Nose",
+      "Take Nose quiz",
+      "Give me Nose test",
+      "I want to attempt Al Khaishoom quiz",
+      "Start Nose test",
+      "Give me Nasal cavity test",
+      "Test me on Nasal cavity",
+      "Give me Al Khaishoom test",
+      "Begin Al Khaishoom assessment",
+      "Check my knowledge of Nasal cavity",
+      "Launch Nose test",
+      "Launch Nasal cavity test",
+      "Begin quiz for Nose",
+      "I want to attempt Nasal cavity quiz",
+      "Take Nasal cavity quiz",
+      "Start Nasal cavity test",
+      "Take Al Khaishoom quiz",
+      "I want to attempt Nose quiz",
+      "Check my knowledge of Nose",
+      "Begin Nose assessment",
+      "Test me on Al Khaishoom",
+      "Check my knowledge of Al Khaishoom",
+      "Begin Nasal cavity assessment",
+      "Begin quiz for Nasal cavity",
+      "Start Al Khaishoom test"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "practice_module_al_khaishoom",
+    "description": "Handles when user wants to practice module for Al Khaishoom module.",
+    "examples": [
+      "Open Al Khaishoom practice session",
+      "Take me to practice for Nose",
+      "Open Nasal cavity practice session",
+      "I want to practice Nose",
+      "Start practicing Nasal cavity",
+      "Take me to practice for Al Khaishoom",
+      "Help me practice Nasal cavity",
+      "Begin Nose training",
+      "Open Nose practice session",
+      "Start practicing Al Khaishoom",
+      "Help me practice Al Khaishoom",
+      "Let's practice Nose",
+      "Begin Nasal cavity training",
+      "Let's practice Al Khaishoom",
+      "I want to practice Al Khaishoom",
+      "Take me to practice for Nasal cavity",
+      "Practice Nose",
+      "Let's practice Nasal cavity",
+      "Help me practice Nose",
+      "I want to practice Nasal cavity",
+      "Practice Al Khaishoom",
+      "Begin Al Khaishoom training",
+      "Practice Nasal cavity",
+      "Start practicing Nose"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "read_description_module_al_khaishoom",
+    "description": "Handles when user wants to read description module for Al Khaishoom module.",
+    "examples": [
+      "Explain what Nose is",
+      "Read description of Al Khaishoom",
+      "Describe Nose",
+      "I want to know about Al Khaishoom",
+      "Describe Nasal cavity",
+      "Give me details about Nose",
+      "Tell me about Nose",
+      "I want to know about Nose",
+      "I want to know about Nasal cavity",
+      "Tell me about Nasal cavity",
+      "Explain what Nasal cavity is",
+      "Give me details about Al Khaishoom",
+      "What is Nasal cavity?",
+      "Give me details about Nasal cavity",
+      "Read description of Nasal cavity",
+      "Describe Al Khaishoom",
+      "What is Nose?",
+      "Read description of Nose",
+      "Explain what Al Khaishoom is",
+      "What is Al Khaishoom?",
+      "Tell me about Al Khaishoom"
+    ],
+    "slots": [
+      "module_name"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "read_description_letter",
+    "description": "Triggered when user refers to read description letter in letter-level interactions.",
+    "examples": [
+      "Explain this letter",
+      "What is this letter?",
+      "Tell me about this sound",
+      "Describe the articulation of this letter",
+      "Give me info about this letter",
+      "Read the details of this letter"
+    ],
+    "slots": [],
+    "meta": "command"
+  },
+  {
+    "intent": "play_sound_letter",
+    "description": "Triggered when user refers to play sound letter in letter-level interactions.",
+    "examples": [
+      "Play the sound",
+      "Let me hear it",
+      "Play it again",
+      "Pronounce the letter",
+      "Play pronunciation",
+      "How does it sound?",
+      "Replay sound"
+    ],
+    "slots": [],
+    "meta": "command"
+  },
+  {
+    "intent": "take_to_practice",
+    "description": "Triggered when user refers to take to practice in letter-level interactions.",
+    "examples": [
+      "Take me to practice",
+      "Start practice",
+      "I want to practice this letter",
+      "Go to practice mode",
+      "Begin practice session"
+    ],
+    "slots": [],
+    "meta": "command"
+  },
+  {
+    "intent": "take_to_test",
+    "description": "Triggered when user refers to take to test in letter-level interactions.",
+    "examples": [
+      "Take me to test",
+      "Start test",
+      "Go to quiz",
+      "I want to test myself",
+      "Open test section"
+    ],
+    "slots": [],
+    "meta": "command"
+  },
+  {
+    "intent": "take_to_lesson",
+    "description": "Triggered when user refers to take to lesson in letter-level interactions.",
+    "examples": [
+      "Take me to lesson",
+      "Go to lesson",
+      "Open lesson",
+      "Start lesson",
+      "I want to learn this letter"
+    ],
+    "slots": [],
+    "meta": "command"
+  },
+  {
+    "intent": "repeat",
+    "description": "Handles repeat commands like repeating or navigation between letters.",
+    "examples": [
+      "Repeat",
+      "Say that again",
+      "Repeat please",
+      "Again",
+      "Once more",
+      "Play again"
+    ],
+    "slots": [],
+    "meta": "command"
+  },
+  {
+    "intent": "repeat_description",
+    "description": "Handles repeat description commands like repeating or navigation between letters.",
+    "examples": [
+      "Repeat the description",
+      "Say explanation again",
+      "Describe again",
+      "Read it again",
+      "Explain once more",
+      "Repeat details"
+    ],
+    "slots": [],
+    "meta": "command"
+  },
+  {
+    "intent": "repeat_sound",
+    "description": "Handles repeat sound commands like repeating or navigation between letters.",
+    "examples": [
+      "Repeat the sound",
+      "Play sound again",
+      "Replay audio",
+      "Say sound again",
+      "Play again"
+    ],
+    "slots": [],
+    "meta": "command"
+  },
+  {
+    "intent": "next_letter",
+    "description": "Handles next letter commands like repeating or navigation between letters.",
+    "examples": [
+      "Next",
+      "Next letter",
+      "Go to next one",
+      "Move forward",
+      "Show next",
+      "Continue"
+    ],
+    "slots": [],
+    "meta": "command"
+  },
+  {
+    "intent": "previous_letter",
+    "description": "Handles previous letter commands like repeating or navigation between letters.",
+    "examples": [
+      "Previous",
+      "Back",
+      "Go back",
+      "Previous letter",
+      "Show earlier one",
+      "Move back"
+    ],
+    "slots": [],
+    "meta": "command"
+  },
+  {
+    "intent": "play_audio_surah_ayah",
+    "description": "Handles user requests related to Surah and Ayah playback or explanations.",
+    "examples": [
+      "Play Surah {surah}",
+      "Play Ayah {ayah}",
+      "Recite {surah}",
+      "Start Surah playback",
+      "Play the verse",
+      "Play Surah audio",
+      "Recite verse by verse"
+    ],
+    "slots": [
+      "surah_name",
+      "ayah_number"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "repeat_verse",
+    "description": "Handles user requests related to Surah and Ayah playback or explanations.",
+    "examples": [
+      "Repeat the verse",
+      "Say Ayah again",
+      "Play that again",
+      "Repeat that verse",
+      "Once more the same Ayah",
+      "Replay that part"
+    ],
+    "slots": [],
+    "meta": "command"
+  },
+  {
+    "intent": "play_audio_surah_ayah_word_by_word",
+    "description": "Handles user requests related to Surah and Ayah playback or explanations.",
+    "examples": [
+      "Play word by word",
+      "Recite slowly word by word",
+      "Say each word separately",
+      "I want word by word playback",
+      "Break it down word by word"
+    ],
+    "slots": [
+      "surah_name",
+      "ayah_number"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "play_audio_surah_ayah_verse_by_verse",
+    "description": "Handles user requests related to Surah and Ayah playback or explanations.",
+    "examples": [
+      "Play verse by verse",
+      "Recite one verse at a time",
+      "Go verse by verse",
+      "Say verse by verse",
+      "Repeat verses individually"
+    ],
+    "slots": [
+      "surah_name",
+      "ayah_number"
+    ],
+    "meta": "command"
+  },
+  {
+    "intent": "read_description_surah",
+    "description": "Handles user requests related to Surah and Ayah playback or explanations.",
+    "examples": [
+      "Read Surah description",
+      "Tell me about this Surah",
+      "Explain meaning of this Surah",
+      "Describe this Surah",
+      "What is this Surah about?"
+    ],
+    "slots": [],
+    "meta": "command"
+  },
+  {
+    "intent": "read_personalization",
+    "description": "Handles read personalization queries related to personalization, milestones, or updates.",
+    "examples": [
+      "Read my personalization",
+      "Show my learning preferences",
+      "Tell me my settings",
+      "What are my recommendations?",
+      "Read my profile summary"
+    ],
+    "slots": [],
+    "meta": "information"
+  },
+  {
+    "intent": "read_progress_milestones",
+    "description": "Handles read progress milestones queries related to personalization, milestones, or updates.",
+    "examples": [
+      "Show my progress",
+      "Read progress milestones",
+      "What have I completed?",
+      "Show me achievements",
+      "Display my progress report",
+      "How am I doing?"
+    ],
+    "slots": [],
+    "meta": "information"
+  },
+  {
+    "intent": "read_updates",
+    "description": "Handles read updates queries related to personalization, milestones, or updates.",
+    "examples": [
+      "Read my updates",
+      "Show latest changes",
+      "What’s new?",
+      "Any new updates?",
+      "Tell me recent updates"
+    ],
+    "slots": [],
+    "meta": "information"
+  }
+]

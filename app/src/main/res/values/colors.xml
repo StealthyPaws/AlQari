@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_800">#1E3A8A</color>
+    <color name="blue_700">#1E40AF</color>
+    <color name="blue_600">#2563EB</color>
+    <color name="blue_500">#3B82F6</color>
+    <color name="blue_400">#60A5FA</color>
+    <color name="blue_300">#93C5FD</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_10">#1AFFFFFF</color>
+
+    <!-- Duolingo Style Palette -->
+    <color name="duo_bg">#131F24</color>       <!-- Dark Navy Background -->
+    <color name="duo_card">#202F36</color>     <!-- Dark Gray Card -->
+    
+    <color name="duo_pink">#FF86D2</color>     <!-- Pink Button Face -->
+    <color name="duo_pink_lip">#FF5CB8</color> <!-- Pink Button 3D Lip -->
+    
+    <color name="duo_blue">#49C0F8</color>     <!-- Blue Button Face -->
+    <color name="duo_blue_lip">#1CB0F6</color> <!-- Blue Button 3D Lip -->
+    
+    <color name="duo_green">#58CC02</color>    <!-- Green Button Face -->
+    <color name="duo_green_lip">#58A700</color><!-- Green Button 3D Lip -->
+    
+    <color name="duo_text_primary">#FFFFFF</color>
+    <color name="duo_text_secondary">#AFAFAF</color>
+
+    <!-- Feedback Colors -->
+    <color name="duo_red">#FF4B4B</color>
+    <color name="duo_orange">#FF9600</color>
+    <color name="duo_light_green">#58CC02</color>
+</resources>

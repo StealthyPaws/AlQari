@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+
+    <!-- 🔹 Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/include_bottomBar"
+        android:background="@drawable/gradient_background"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <!-- Top Bar -->
+            <include
+                android:id="@+id/include_topBar"
+                layout="@layout/layout_top_bar"/>
+
+            <!-- 🔹 2x2 Grid Section -->
+            <GridLayout
+                android:id="@+id/halaqThumbnailsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:useDefaultMargins="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center">
+
+                <!-- Overview -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:background="@drawable/bordered_card"
+                    android:clipToOutline="true">
+
+                    <ImageView
+                        android:id="@+id/overviewImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="8dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="Overview" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Overview"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <!-- Adna -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:background="@drawable/bordered_card"
+                    android:clipToOutline="true">
+
+                    <ImageView
+                        android:id="@+id/adnaHalaqImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="8dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="Adna" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adna"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <!-- Wasta -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:background="@drawable/bordered_card"
+                    android:clipToOutline="true">
+
+                    <ImageView
+                        android:id="@+id/wastaHalaqImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="8dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="Wasta" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wasta"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <!-- Aqsa -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:background="@drawable/bordered_card"
+                    android:clipToOutline="true">
+
+                    <ImageView
+                        android:id="@+id/aqsaHalaqImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="8dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="Aqsa" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aqsa"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </GridLayout>
+
+            <!-- 🔹 Letter Buttons -->
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="32dp">
+
+                <!-- 🟣 CARD 1: General Overview -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/overviewCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_duo_card">
+
+                        <TextView
+                            android:text="General Overview"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/overview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#EDEBFF"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:lineSpacingExtra="4dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 🟣 CARD 2: The deepest part of the throat -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_deepest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_duo_card">
+
+                        <TextView
+                            android:text="The deepest part of the throat"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cardDeepestText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#EDEBFF"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:lineSpacingExtra="4dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Buttons -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnH"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ه"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_blue"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnHamza"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ء"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_pink"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+                <!-- 🟣 CARD 3: The middle part of the throat -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_duo_card">
+
+                        <TextView
+                            android:text="The middle part of the throat"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cardmiddleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#EDEBFF"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:lineSpacingExtra="4dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAin"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ع"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_green"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnHaa"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ح"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_blue"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+                <!-- 🟣 CARD 3: The closest part of the throat -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_closest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_duo_card">
+
+                        <TextView
+                            android:text="The closest part of the throat"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cardclosestText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#EDEBFF"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:lineSpacingExtra="4dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGhayn"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="غ"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_pink"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnKhaa"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="خ"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_green"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 🔹 Popup Overlay -->
+    <FrameLayout
+        android:id="@+id/popupContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000"
+        android:visibility="gone"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/popupImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:contentDescription="Popup enlarged image" />
+    </FrameLayout>
+
+    <!-- 🔹 Bottom Navigation -->
+    <include
+        android:id="@+id/include_bottomBar"
+        layout="@layout/layout_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

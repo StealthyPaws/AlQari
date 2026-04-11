@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <!-- Include Top Bar -->
+    <include
+        android:id="@+id/includeTopBar"
+        layout="@layout/layout_top_bar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Center vertical buttons -->
+    <LinearLayout
+        android:id="@+id/centerButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Button 1: Tester -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTester"
+            android:layout_width="220dp"
+            android:layout_height="56dp"
+            android:text="Tester"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/bg_duo_button_blue"
+            app:backgroundTint="@null"
+            app:cornerRadius="16dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Button 2: Helper -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHelper"
+            android:layout_width="220dp"
+            android:layout_height="56dp"
+            android:text="Helper"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/bg_duo_button_pink"
+            app:backgroundTint="@null"
+            app:cornerRadius="16dp" />
+    </LinearLayout>
+
+    <!-- Include Bottom Navigation -->
+    <include
+        android:id="@+id/include_bottomBar"
+        layout="@layout/layout_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

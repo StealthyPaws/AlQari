@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/include_bottomBar"
+        android:background="@drawable/gradient_background"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <!-- Top Bar -->
+            <include
+                android:id="@+id/include_topBar"
+                layout="@layout/layout_top_bar"/>
+
+            <!-- Final balanced Overview Image border -->
+            <LinearLayout
+                android:id="@+id/overviewCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bordered_card"
+                android:clipToOutline="true"
+                android:clickable="true"
+                android:paddingHorizontal="3dp"
+                android:paddingVertical="10dp">
+
+                <ImageView
+                    android:id="@+id/overviewImage"
+                    android:layout_width="180dp"
+                    android:layout_height="175dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Overview"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+
+            <!-- 🟣 CARD 1: General Overview -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="18dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                        android:background="@drawable/bg_duo_card">
+
+                    <TextView
+                        android:text="General Overview"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/cardOverviewText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#EDEBFF"
+                        android:textSize="15sp"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Letters Buttons -->
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <!-- 18 Buttons -->
+
+<!--                qaaf buttons-->
+
+                <!-- 🟣 CARD 2: The Deepest Part of the Tongue -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_deepest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                            android:background="@drawable/bg_duo_card">
+
+                        <TextView
+                            android:text="The Deepest Part of the Tongue"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cardDeepestText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#EDEBFF"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:lineSpacingExtra="4dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnQaaf"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ق"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_blue"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnKaaf"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ك"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_pink"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+                <!-- 🟣 CARD 3: The Middle of the Tongue -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                            android:background="@drawable/bg_duo_card">
+
+                        <TextView
+                            android:text="The Middle of the Tongue"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/cardMiddleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#EDEBFF"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:lineSpacingExtra="4dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+<!--                jeem sheen yaa-->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnJeem"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ج"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_green"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSheen"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ش"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_blue"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnYaa"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ي"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_pink"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+                <!-- 🟣 CARD 4: The Edges of the Tongue -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_edges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                            android:background="@drawable/bg_duo_card">
+
+                        <TextView
+                            android:text="The Edges of the Tongue"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/cardEdgesText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#EDEBFF"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:lineSpacingExtra="4dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+                <!--                daad-->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDhaud"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ض"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_green"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+<!--                &lt;!&ndash; 🟣 CARD 5: The Edges of the Tongue &ndash;&gt;-->
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:id="@+id/card_canine"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    app:cardCornerRadius="18dp"-->
+<!--                    app:cardUseCompatPadding="true">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:padding="16dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/bg_duo_card">-->
+
+<!--                        <TextView-->
+<!--                            android:text="The Edges of the Tongue"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:textColor="#FFFFFF"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/cardEdgesText"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textColor="#EDEBFF"-->
+<!--                            android:textSize="15sp"-->
+<!--                            android:layout_marginTop="8dp"-->
+<!--                            android:lineSpacingExtra="4dp"/>-->
+<!--                    </LinearLayout>-->
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+<!--                noon, raa, laam-->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNoon"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ن"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_blue"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRa"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ر"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_pink"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLam"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ل"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_green"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+
+                <!-- 🟣 CARD 5: The Tip of the Tongue -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                            android:background="@drawable/bg_duo_card">
+
+                        <TextView
+                            android:text="The Tip of the Tongue"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/cardTipText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#EDEBFF"
+                            android:textSize="15sp"
+                            android:layout_marginTop="8dp"
+                            android:lineSpacingExtra="4dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+<!--                    taa, daal, tau-->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTaa"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ت"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_blue"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDal"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="د"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_pink"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTau"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ط"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_green"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+<!--                seen, zaa, saad-->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSeen"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="س"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_blue"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnZay"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ز"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_pink"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSaad"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ص"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_green"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+<!--                thaa, zaal, zua-->
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnThaa"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ث"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_blue"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDhal"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ذ"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_pink"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnZua"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="ظ"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/amiri"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/bg_duo_button_green"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="16dp"
+                    app:icon="@null"
+                    app:iconPadding="0dp"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Popup Overlay -->
+    <FrameLayout
+        android:id="@+id/popupContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000"
+        android:visibility="gone"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/popupImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:contentDescription="Popup enlarged image" />
+    </FrameLayout>
+
+
+    <!-- Bottom Navigation Bar -->
+    <include
+        android:id="@+id/include_bottomBar"
+        layout="@layout/layout_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,81 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Gradient background wrapper -->
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@drawable/bg_duo_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:clipToPadding="false">
+
+        <!-- Card inside gradient -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:strokeWidth="0dp"
+            android:padding="16dp">
+
+            <!-- Content inside card -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Quran image with stars overlay -->
+                <FrameLayout
+                    android:id="@+id/imgContainer"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="16dp">
+
+                    <ImageView
+                        android:id="@+id/imgQuran"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/quran"
+                        android:contentDescription="Quran"/>
+
+                    <ImageView
+                        android:id="@+id/imgStars"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/star"
+                        android:contentDescription="Stars"
+                        android:alpha="0.7"/>
+                </FrameLayout>
+
+                <!-- Optional text -->
+                <TextView
+                    android:id="@+id/topBarText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Optional Text"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@id/imgContainer"
+                    app:layout_constraintTop_toTopOf="@id/imgContainer"
+                    app:layout_constraintBottom_toBottomOf="@id/imgContainer"
+                    android:layout_marginStart="16dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
