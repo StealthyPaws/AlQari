@@ -7,7 +7,7 @@
 <p>
   <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android">
   <img src="https://img.shields.io/badge/Backend-Flask%20%2F%20Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Flask">
-  <img src="https://img.shields.io/badge/AI-Gemini%20LLM-4285F4?style=flat-square&logo=google&logoColor=white" alt="LLMs">
+  <img src="https://img.shields.io/badge/%20LLM-4285F4?style=flat-square&logo=google&logoColor=white" alt="LLMs">
   <img src="https://img.shields.io/badge/ASR-Whisper--Tarteel-black?style=flat-square" alt="Whisper Tarteel">
   <img src="https://img.shields.io/badge/Type-Final%20Year%20Project-orange?style=flat-square" alt="FYP">
 </p>
