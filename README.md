@@ -7,12 +7,12 @@
 <p>
   <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android">
   <img src="https://img.shields.io/badge/Backend-Flask%20%2F%20Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Flask">
-  <img src="https://img.shields.io/badge/AI-Gemini%20LLM-4285F4?style=flat-square&logo=google&logoColor=white" alt="Gemini">
+  <img src="https://img.shields.io/badge/AI-Gemini%20LLM-4285F4?style=flat-square&logo=google&logoColor=white" alt="LLMs">
   <img src="https://img.shields.io/badge/ASR-Whisper--Tarteel-black?style=flat-square" alt="Whisper Tarteel">
   <img src="https://img.shields.io/badge/Type-Final%20Year%20Project-orange?style=flat-square" alt="FYP">
 </p>
 
-<p><em>An AI-powered mobile assistant for Quranic pronunciation practice and memorization, combining speech recognition, conversational AI, and a custom Makharij evaluation model in a privacy-first design.</em></p>
+<p><em>A fully voice enabled AI-powered mobile assistant for Quranic pronunciation practice and memorization, combining speech recognition, conversational AI, and a custom Makharij evaluation model in a privacy-first design.</em></p>
 
 </div>
 
@@ -462,7 +462,7 @@ Academic Year: 2022 -- 2026
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the Apache 2.0 License.
 
 ```
 Apache 2.0 License
